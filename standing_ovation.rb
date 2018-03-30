@@ -24,12 +24,12 @@ def main(index, chars)
   # Write to output file
   output = 'Case #' + "#{index}: #{invited}\n"
   #IO.write(, output)
-  open("./output_files/standing_ovation.txt", "a") do |f|
+  open("./large_dataset.out", "a") do |f|
     f.puts output
   end
 end
 
-File.open("./input_files/A-large-practice.in", "r") do |f|
+File.open("./A-large-practice.in", "r") do |f|
   f.each_with_index do |line, index|
     if index == 0
       next
